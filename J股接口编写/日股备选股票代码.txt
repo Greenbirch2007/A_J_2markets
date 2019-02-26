@@ -1,0 +1,1 @@
+SELECT coding,title,industry,market_value,returns_ratio FROM JS.js_infos_finanData where coding in (8411,6981,9532,3765,7936,9715,9438,6773);
