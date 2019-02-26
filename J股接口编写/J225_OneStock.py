@@ -22,7 +22,7 @@ index_Cash = 0.1*total_Cash
 stock_Cash = 0.7*total_Cash
 index_Future_N = floor(index_Cash/429000)# index的手数，向下取整。
 index_cost = 0
-stock_cost = 3635
+stock_cost = 312
 
 def get_index_PL():
     response = requests.get('https://stocks.finance.yahoo.co.jp/stocks/detail/?code=998407.O')
@@ -36,9 +36,10 @@ def get_index_PL():
     big_list.append(str(indexF_PL_2))
 
 
-# 大日本住友製薬(株)【4506】
+# 
+# ガンホー・オンライン・エンターテイメント(株) [3765]
 def get_stocks_PL():
-    url = 'https://stocks.finance.yahoo.co.jp/stocks/detail/?code=4506'
+    url = 'https://stocks.finance.yahoo.co.jp/stocks/detail/?code=3765'
     headers = {'Useragent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.0'}
     response = requests.get(url, headers=headers)
     content = response.text

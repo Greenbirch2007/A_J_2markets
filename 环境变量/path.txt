@@ -9,7 +9,7 @@ export PATH="$PATH:/home/lk/pycharm/bin:/home/lk/PYENV/bin:/home/lk/Daily5Ms_sql
 # 命令简化设置
 alias sa="source activate"  # python环境
 alias csa="cd /home/lk/A_J_2markets/A股接口编写" # 进入A股可视化目录
-alias cja="cd /home/lk/A_J_2markets/J股接口编写"  #进入J股可视化目录
+alias csj="cd /home/lk/A_J_2markets/J股接口编写"  #进入J股可视化目录
 
 
 # python脚本运行简化

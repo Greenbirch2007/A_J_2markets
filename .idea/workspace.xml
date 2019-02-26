@@ -96,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Table_Fdata">
+  <component name="RunManager" selected="Python.J225_OneStock">
     <configuration name="J225_OneStock" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="A_J_2markets" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,10 +204,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.J225_OneStock" />
         <item itemvalue="Python.Table_Fdata" />
         <item itemvalue="Python.stcoks_note2" />
         <item itemvalue="Python.stocks_note1" />
-        <item itemvalue="Python.J225_OneStock" />
         <item itemvalue="Python.a50_onestock" />
       </list>
     </recent_temporary>
