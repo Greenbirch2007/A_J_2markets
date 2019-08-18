@@ -10,19 +10,19 @@ from lxml import etree
 import time
 import datetime
 from math import floor
-# 2019.1.23 修改日经套利模型的参数比例
+# 2019.8.18 修改日经套利模型的参数比例
 # 日经期货225的化429点就翻倍了，6:3的比例就不合适了
 # 尝试缩放到7：１
 # 日经也是一条毒蛇啊
 
 
-# 2019.2.25 先开始单边，重新找个股
+# 2019.8.18 先开始单边，重新找个股
 total_Cash = 10000000 # 初识资金1000万日元　
 index_Cash = 0.1*total_Cash
 stock_Cash = 0.7*total_Cash
 index_Future_N = floor(index_Cash/429000)# index的手数，向下取整。
-index_cost = 0
-stock_cost = 312
+index_cost = 20418
+stock_cost = 1449
 
 def get_index_PL():
     response = requests.get('https://stocks.finance.yahoo.co.jp/stocks/detail/?code=998407.O')
@@ -37,9 +37,9 @@ def get_index_PL():
 
 
 # 
-# ガンホー・オンライン・エンターテイメント(株) [3765]
+# ＯＫＩ [6703]
 def get_stocks_PL():
-    url = 'https://stocks.finance.yahoo.co.jp/stocks/detail/?code=3765'
+    url = 'https://stocks.finance.yahoo.co.jp/stocks/detail/?code=6703'
     headers = {'Useragent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.0'}
     response = requests.get(url, headers=headers)
     content = response.text
