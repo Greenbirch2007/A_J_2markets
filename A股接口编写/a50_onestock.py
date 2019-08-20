@@ -131,6 +131,8 @@ if __name__ == '__main__':
 # stock_PL varchar(10),
 # profilo_PL varchar(10),
 # profilo_PL_R varchar(10)
+# LastTime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
 # ) engine=InnoDB  charset=utf8;
 
 # drop table A50_OneStock_PL;

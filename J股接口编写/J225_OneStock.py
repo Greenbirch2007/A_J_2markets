@@ -21,7 +21,7 @@ total_Cash = 10000000 # 初识资金1000万日元　
 index_Cash = 0.1*total_Cash
 stock_Cash = 0.7*total_Cash
 index_Future_N = floor(index_Cash/429000)# index的手数，向下取整。
-index_cost = 20418
+index_cost = 0
 stock_cost = 1449
 
 def get_index_PL():
@@ -113,7 +113,8 @@ if __name__ == '__main__':
 # index_PL varchar(10),
 # stock_PL varchar(10),
 # profilo_PL varchar(10),
-# profilo_PL_R varchar(10)
+# profilo_PL_R varchar(10),
+# LastTime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 # ) engine=InnoDB  charset=utf8;
 
 
